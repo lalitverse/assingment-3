@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shinsei Village</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+    <div class="site-header__inner">
+      <a href="#" class="logo">
+        <span class="logo__text">SHINSEI</span>
+        <img src="assets/logo-monkey.png" alt="" class="logo__icon" width="28" height="28" />
+        <span class="logo__text">VILLAGE</span>
+      </a>
+
+      <nav class="nav-main" aria-label="Primary">
+        <a href="#vision" class="nav-main__link nav-main__link--active">Vision</a>
+        <a href="#" class="nav-main__link">Collection</a>
+        <a href="#" class="nav-main__link">Roadmap</a>
+        <a href="#" class="nav-main__link">Team</a>
+        <a href="#" class="nav-main__link nav-main__link--external">Mint <span class="arrow-up">↗</span></a>
+        <a href="#" class="nav-main__link nav-main__link--external">Wallet Checker <span class="arrow-up">↗</span></a>
+      </nav>
+
+      <div class="social">
+        <a href="#" class="social__btn" aria-label="Instagram">
+          <svg class="social__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="#" class="social__btn" aria-label="Telegram">
+          <svg class="social__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.948 2.316a.625.625 0 0 0-.762.092L2.562 12.203a.625.625 0 0 0 .08 1.125l4.903 2.002 1.896 6.132a.625.625 0 0 0 1.168.153l2.76-4.216 4.823 3.532a.625.625 0 0 0 .98-.441l3.748-14.75a.625.625 0 0 0-.972-.622zM18.6 5.882 9.47 14.35l-.155 3.45-1.245-4.03-6.28-2.562 16.81-5.326z"/></svg>
+        </a>
+        <a href="#" class="social__btn" aria-label="Discord">
+          <svg class="social__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.891.076.076 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+        </a>
+      </div>
+
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Hero">
+    <div class="hero__bg" role="presentation"></div>
+    <div class="hero__blur" role="presentation"></div>
+    <div class="hero__vignette" role="presentation"></div>
+
+    <div class="hero__inner">
+      <p class="hero__tagline">Join the Mystic Adventure</p>
+
+      <div class="hero__stage">
+        <div class="hero__titles">
+          <span class="hero__title-word hero__title-word--left">SHINSEI</span>
+          <span class="hero__title-spacer" aria-hidden="true"></span>
+          <span class="hero__title-cluster">
+            <span class="hero__title-word hero__title-word--right">VILLAGE</span>
+            <span class="hero__subtitle">Genuine Storytelling Project</span>
+          </span>
+        </div>
+        <img src="assets/download (1).png" alt="" class="hero__character" width="520" height="780" />
+      </div>
+
+      <a href="#" class="hero__cta">MINT NOW</a>
+    </div>
+
+    <div class="hero__curve" aria-hidden="true">
+      <svg class="hero__curve-svg" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 Q720,140 1440,40 L1440,120 L0,120 Z" fill="currentColor" />
+      </svg>
+    </div>
+  </section>
+
+  <section class="vision" id="vision">
+    <div class="vision__noise" aria-hidden="true"></div>
+    <div class="vision__inner">
+      <h2 class="vision__heading">VISION</h2>
+      <div class="vision__rule">
+        <span class="vision__rule-line vision__rule-line--left"></span>
+        <span class="vision__rule-diamond"></span>
+        <span class="vision__rule-line vision__rule-line--right"></span>
+      </div>
+      <div class="vision__columns">
+        <p class="vision__text">
+          Shinsei Village is a collection featuring 1,200 demigod monkeys, unraveling a mysterious case to save their village. The project is <strong>not just a PFP collection</strong>, but a fascinating on-chain storyline. Through a focus on community engagement, the project seeks to build the <strong>new era of Web3 entertainment.</strong>
+        </p>
+        <p class="vision__text">
+          Each stage of development is aimed to deliver the adventure experience to the community, as well as <strong>provides rewards and benefits</strong> for all holders. Solve weekly puzzles to open mystic boxes and <strong>collect $CLUE!</strong> Uncovering the plot is entirely up to the vote and decisions of the community.
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
